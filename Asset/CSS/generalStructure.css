@@ -7,15 +7,71 @@ a {
   text-decoration: none;
 }
 
-section {
-  margin-top: 7.78rem;
-}
 .section_header {
   margin-bottom: 4rem;
+  margin-top: 7.78rem;
 }
 img {
   width: 100%;
 }
+
+#list_good_people {
+  margin-bottom: 7rem;
+  font-size: 0.9rem;
+}
+
+#list_good_people ul {
+  padding-left: 0.5rem;
+}
+.name_list {
+  list-style-type: none;
+}
+.names {
+  text-transform: capitalize;
+  font-weight: bold;
+  line-height: 2.3rem;
+}
+.sections {
+  padding-top: 2.6rem;
+}
+
+.section_title {
+  text-transform: uppercase;
+  font-family: "din-condensed-web", "Trebuchet MS", "Arial Narrow", Arial,
+    sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  padding-top: 5px;
+}
+
+.section_body {
+  border-bottom: 0.1px rgb(202, 200, 200) solid;
+  padding-bottom: 2.6rem;
+  padding-top: 1.3rem;
+}
+
+.no_border {
+  border: none;
+}
+
+.section_body_title {
+  text-transform: uppercase;
+  font-family: "din-condensed-web", "Trebuchet MS", "Arial Narrow", Arial,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-top: 8px;
+}
+.section_body_subtitle {
+  text-transform: uppercase;
+  font-family: "din-condensed-web", "Trebuchet MS", "Arial Narrow", Arial,
+    sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+}
+
 /* Mobile-First Desgin */
 @media only screen and (max-width: 600px) {
   #hands {
