@@ -72,14 +72,32 @@ img {
   font-weight: normal;
 }
 
+#body_note {
+  background-color: aliceblue;
+  padding-bottom: 4%;
+  margin-top: 20%;
+  overflow: hidden;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+#foot_note {
+  padding: 0.8rem;
+  margin-bottom: 4.5rem;
+}
+
+#resume_content{
+  padding: 0.5rem;
+}
+
 /* Mobile-First Desgin */
 @media only screen and (max-width: 600px) {
   #hands {
     display: none;
   }
   #content {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
   .header_title {
     font-size: 1.7rem;
@@ -142,7 +160,6 @@ img {
     display: grid;
     grid-row-gap: 0.5rem;
     width: 100%;
-    /* margin-top: 4rem; */
   }
 
   .overlay {
@@ -233,5 +250,9 @@ img {
 
   #foot_part {
     display: none;
+  }
+
+  #workshowcase {
+    margin: 0;
   }
 }
