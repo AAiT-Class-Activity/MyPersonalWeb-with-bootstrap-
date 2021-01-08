@@ -1,0 +1,181 @@
+.intro_note {
+  line-height: 1.5em;
+  margin-bottom: 1.3em;
+  font-size: 1.23em;
+}
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-top: 7.78rem;
+}
+.section_header {
+  margin-bottom: 4rem;
+}
+img {
+  width: 100%;
+}
+/* Mobile-First Desgin */
+@media only screen and (max-width: 600px) {
+  #hands {
+    display: none;
+  }
+  #content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .header_title {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+
+    font-weight: bold;
+    text-align: center;
+    font-family: "din-condensed-web", "Trebuchet MS", "Arial Narrow", Arial,
+      sans-serif;
+    margin-bottom: 0.67rem;
+  }
+
+  .header_subtitle {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "ff-tisa-web-pro", Palatino, " Palatino Linotype",
+      "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 0.67rem;
+    line-height: 1.5em;
+  }
+  #About {
+    display: grid;
+  }
+
+  #reference_link {
+    width: 100%;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 0.5rem;
+  }
+  #reference_link a {
+    text-align: center;
+  }
+  .ref_title {
+    text-transform: uppercase;
+    font-family: "din-condensed-web", "Trebuchet MS", "Arial Narrow", Arial,
+      sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    color: crimson;
+  }
+
+  .ref_subtitle {
+    text-transform: uppercase;
+    font-family: "ff-tisa-web-pro", Palatino, " Palatino Linotype",
+      "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    color: crimson;
+    font-size: 11px;
+    margin-top: 0.4rem;
+    letter-spacing: 2px;
+  }
+
+  #work_showcase {
+    display: grid;
+    grid-row-gap: 0.5rem;
+    width: 100%;
+    /* margin-top: 4rem; */
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  #contact_address {
+    font-family: "ff-tisa-web-pro", Palatino, " Palatino Linotype",
+      "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 0.78rem;
+    line-height: 1.6em;
+    margin-bottom: 1.3rem;
+  }
+
+  #contact_form {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3.5rem;
+  }
+
+  .form_container {
+    position: relative;
+    overflow: hidden;
+    width: inherit;
+    margin-bottom: 0.9rem;
+  }
+
+  .icon_label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 48px;
+    width: 47px;
+  }
+
+  .form__icon {
+    position: absolute;
+    left: 19%;
+    top: 17%;
+    height: 30px;
+    width: 30px;
+  }
+
+  .form_container input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 48px;
+    margin-bottom: 0.2rem;
+    margin-right: 1%;
+    padding-left: 50px;
+    font-size: 18px;
+    font-family: "ff-tisa-web-pro", Palatino, " Palatino Linotype",
+      "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    border: 2px gray solid;
+  }
+
+  .form_container textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 4%;
+    padding-left: 50px;
+    padding-top: 1.5%;
+    font-size: 18px;
+    font-family: "ff-tisa-web-pro", Palatino, " Palatino Linotype",
+      "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    resize: none;
+    border: 2px gray solid;
+  }
+
+  .form_container label {
+    background-color: black;
+  }
+
+  #submit_button {
+    float: right;
+    background: black;
+    color: white;
+    border: 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0;
+    height: 50px;
+    width: 108px;
+    text-align: center;
+    padding: 0;
+  }
+
+  #foot_part {
+    display: none;
+  }
+}
