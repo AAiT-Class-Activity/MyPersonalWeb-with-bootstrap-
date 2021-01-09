@@ -517,4 +517,32 @@ img {
     margin-top: 0;
     line-height: 2rem;
   }
+
+  /* work_showcase part */
+  #body_note {
+    clear: both;
+    background-color: aliceblue;
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-left: 17.4%;
+    text-align: center;
+    padding-bottom: 4%;
+    margin-top: 20%;
+    overflow: hidden;
+  }
+  #body_note_passage {
+    float: left;
+    width: 50%;
+  }
+  #work_img {
+    width: 400px;
+    height: 300px;
+  }
+  #foot_note {
+    width: 68%;
+    margin: 0;
+    text-align: center;
+    margin-left: 16.4%;
+    margin-bottom: 6%;
+  }
 }
