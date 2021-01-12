@@ -191,9 +191,79 @@ img {
 #contact_address a {
   color: red;
 }
+#sidebar_menu a {
+  color: black;
+}
+#sidebar_menu a:hover {
+  color: red;
+}
+#sidebar {
+  height: 100%;
+  width: 11.7%;
+  background: white;
+  position: fixed;
+}
+
+#sidebar_footnote {
+  position: absolute;
+  bottom: 2.8%;
+  left: 10%;
+  width: 90%;
+  font-size: 12px;
+  font-weight: lighter;
+  color: gray;
+}
+
+#good_people_link {
+  text-transform: uppercase;
+  color: red;
+}
+
+#sidebar_menu {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+.sidebar_menus {
+  margin: auto;
+  padding-bottom: 40%;
+}
+
+.sidebar_menu_title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "din-condensed-web", "Trebuchet MS", "Arial Narrow", Arial,
+    sans-serif;
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-weight: 900;
+}
+
+.menu_icon {
+  width: 100%;
+}
+
+.sidebar_menu_subtitle {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "ff-tisa-web-pro", Palatino, " Palatino Linotype",
+    "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 11px;
+}
+#check {
+  display: none;
+}
+label {
+  display: none;
+  top: 0;
+}
 
 /* Mobile-First Desgin */
 @media only screen and (max-width: 600px) {
+  body {
+    margin-top: 0;
+  }
   #hands {
     display: none;
   }
@@ -262,6 +332,42 @@ img {
   #workshowcase {
     margin: 0;
   }
+
+  #sidebar {
+    left: -45%;
+    z-index: 200;
+    width: 45%;
+    top: 0;
+    transition: all 0.5s;
+  }
+  label {
+    position: fixed;
+    background-color: black;
+    left: 0%;
+    text-align: center;
+    transition: all 0.5s;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    display: block;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: left;
+    cursor: pointer;
+  }
+  .hamberger {
+    padding-top: 8px;
+  }
+
+  #check:checked ~ #sidebar {
+    left: 0%;
+  }
+
+  #check:checked ~ label {
+    left: 45%;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -269,66 +375,7 @@ img {
   body {
     background-color: rgb(243, 243, 243);
   }
-  #sidebar_menu a {
-    color: black;
-  }
-  #sidebar_menu a:hover {
-    color: red;
-  }
-  #sidebar {
-    height: 100%;
-    width: 11.7%;
-    background: white;
-    position: fixed;
-  }
 
-  #sidebar_footnote {
-    position: absolute;
-    bottom: 2.8%;
-    left: 10%;
-    width: 90%;
-    font-size: 12px;
-    font-weight: lighter;
-    color: gray;
-  }
-
-  #good_people_link {
-    text-transform: uppercase;
-    color: red;
-  }
-
-  #sidebar_menu {
-    position: absolute;
-    top: 30%;
-    width: 100%;
-  }
-
-  .sidebar_menus {
-    margin: auto;
-    padding-bottom: 40%;
-  }
-
-  .sidebar_menu_title {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: "din-condensed-web", "Trebuchet MS", "Arial Narrow", Arial,
-      sans-serif;
-    font-size: 20px;
-    letter-spacing: 0px;
-    font-weight: 900;
-  }
-
-  .menu_icon {
-    width: 100%;
-  }
-
-  .sidebar_menu_subtitle {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: "ff-tisa-web-pro", Palatino, " Palatino Linotype",
-      "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    font-size: 11px;
-  }
   #container {
     background-color: white;
     width: 88.05%;
@@ -603,6 +650,10 @@ img {
     text-align: center;
     margin-left: 16.4%;
     margin-bottom: 6%;
+  }
+
+  #check {
+    display: none;
   }
 }
 
