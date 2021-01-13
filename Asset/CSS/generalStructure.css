@@ -351,6 +351,10 @@ label {
     z-index: 1;
     display: block;
   }
+  .containerCollaps{
+    position: absolute;
+    transition: all 0.5s;
+  }
   .checkbtn {
     font-size: 30px;
     color: white;
@@ -359,6 +363,10 @@ label {
   }
   .hamberger {
     padding-top: 8px;
+  }
+
+  #check:checked ~ .containerCollaps{
+    left: 45%;
   }
 
   #check:checked ~ #sidebar {
