@@ -1,0 +1,64 @@
+.navbar-expand-md {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+.navbar {
+  background-color: white;
+}
+
+.navbar-collapse {
+  background-color: white;
+}
+.container-fluid {
+  padding-right: 0;
+  padding-left: 2px;
+  background-color: rgb(243, 243, 243);
+}
+.main-content {
+  background-color: white;
+}
+
+@media (max-width: 600px) {
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: translateX(-101%);
+    transition: all ease 0.25s;
+    &.open {
+      transform: translateX(0);
+    }
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    &.open {
+      display: block;
+    }
+  }
+  .toggler-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease 0.25s;
+    &.open {
+      transform: translateX(200px);
+    }
+  }
+  .navbar {
+    width: 0px;
+  }
+  .navbar-collapse {
+    width: 200px;
+  }
+}
