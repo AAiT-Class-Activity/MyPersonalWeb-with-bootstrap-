@@ -1,3 +1,6 @@
+body{
+  font-family: 'Bodoni Moda', serif;
+}
 .navbar-expand-md {
   position: fixed;
   top: 0;
@@ -17,6 +20,10 @@
 }
 .main-content {
   background-color: white;
+}
+
+.gray-content {
+  background-color: rgb(243, 243, 243);
 }
 
 @media (max-width: 600px) {
@@ -60,5 +67,12 @@
   }
   .navbar-collapse {
     width: 200px;
+  }
+
+  .gray-content {
+    background-color: rgb(255, 255, 255);
+  }
+  .gray-container {
+    background-color: rgb(255, 255, 255);
   }
 }
