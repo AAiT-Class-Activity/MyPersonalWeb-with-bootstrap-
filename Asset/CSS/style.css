@@ -1,5 +1,10 @@
 body {
-  font-family: 'Bodoni Moda', serif;
+  font-family: "Bodoni Moda", serif;
+}
+
+#blinking {
+  width: 100%;
+  height: auto;
 }
 
 .navbar-expand-md {

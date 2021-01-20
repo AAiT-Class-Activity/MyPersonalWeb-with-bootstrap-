@@ -119,8 +119,15 @@
 
     <div class="overlay-container">
     </div>
-    <div class="container-fluid col-md-9 col-lg-10 mt-5" style="margin-right: 0; margin-top: 500px;">
 
+
+    <div class="container-fluid col-md-9 col-lg-10" style="margin-right: 0;">
+
+        <div class="head_part d-none d-lg-block p-0">
+            <video id="blinking" autoplay muted loop>
+                <source src="./Asset/Video/guy3.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="main-content">
             <div class="content-warrper col-md-10 col-lg-8 col-12 ml-auto mr-auto pr-4">
 
@@ -404,7 +411,7 @@
                 </section>
             </div>
 
-            <div id="foot_part col-12">
+            <div id="foot_part" class="d-none d-lg-block">
                 <div id="foot_part_container">
                     <img src="./Asset/Image/feet.jpg" alt="" class="col-12 p-0 d-none d-md-block" id="foot_pic">
                 </div>
