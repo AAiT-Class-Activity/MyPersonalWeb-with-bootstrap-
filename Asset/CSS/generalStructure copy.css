@@ -252,3 +252,10 @@ a:hover {
     height: 150px;
   }
 }
+
+#nav-footer {
+  font-family: "din-condensed-web", "Trebuchet MS", "Arial Narrow", Arial,
+    sans-serif;
+  font-weight: lighter;
+  font-size: 13px;
+}
